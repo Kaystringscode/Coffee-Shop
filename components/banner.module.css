@@ -164,9 +164,14 @@
     }
 }
 
+
+
 /** xl breakpoint **/
 @media (min-width: 1280px) {
     .title2 {
         display: inline;
     }
 }
+
+
+
