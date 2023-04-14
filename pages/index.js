@@ -7,6 +7,9 @@ import Banner from "@/components/banner";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+	const handleOnBannerBtnClick = () => {
+		console.log("Hi You Clicked Button");
+	};
 	return (
 		<>
 			<Head>
@@ -16,8 +19,10 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={styles.main}>
-				<h1 className={styles.title}>Coffee Connoisseur</h1>
-				<Banner />
+				<Banner
+					buttonText="Veiw Stores nearby"
+					handleOnClick={handleOnBannerBtnClick}
+				/>
 			</main>
 			{/* <footer className={styles.footer}></footer> */}
 		</>
