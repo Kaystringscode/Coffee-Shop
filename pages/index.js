@@ -23,6 +23,9 @@ export default function Home() {
 					buttonText="Veiw Stores nearby"
 					handleOnClick={handleOnBannerBtnClick}
 				/>
+				<div className={styles.heroImage}>
+					<Image src="/Static/Coffee.png" width={210} height={190}></Image>
+				</div>
 			</main>
 			{/* <footer className={styles.footer}></footer> */}
 		</>
