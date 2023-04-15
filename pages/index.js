@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Banner from "@/components/banner";
+import Card from "@/components/card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,11 @@ export default function Home() {
 				<div className={styles.heroImage}>
 					<Image src="/Static/Coffee.png" width={210} height={190}></Image>
 				</div>
+				<Card
+					name="Kay Coffee"
+					imgUrl="/Static/mega-creator.png"
+					href="coffee-store/kay-coffee"
+				/>
 			</main>
 			{/* <footer className={styles.footer}></footer> */}
 		</>
